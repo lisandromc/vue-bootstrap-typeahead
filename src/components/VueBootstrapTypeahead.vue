@@ -151,6 +151,7 @@ export default {
         return
       }
       this.isFocused = false
+      this.$emit('blur', evt)
     },
 
     handleInput(newValue) {
